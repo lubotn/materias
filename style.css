@@ -4,3 +4,15 @@
     --ciano:  #00ADB5;
     --branco: #EEEEEE;
 }
+header {
+    display: flex;
+    width: 100%;
+    background-color: #00ADB5;
+    padding: 1rem;
+    position: relative;
+    justify-content: center;
+}
+.menu-disciplina{
+    width: 20%;
+    display: inline-block;
+}
