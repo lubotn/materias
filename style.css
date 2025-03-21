@@ -28,3 +28,13 @@ header {
 #menu-toggle{
     display: none;
 }
+.lista-vertical{
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    box-shadow: 0 2px 5px var(--ciano);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
