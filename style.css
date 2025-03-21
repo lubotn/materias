@@ -7,7 +7,7 @@
 header {
     display: flex;
     width: 100%;
-    background-color: #00ADB5;
+    background-color:var(--cinza);
     padding: 1rem;
     position: relative;
     justify-content: center;
@@ -15,4 +15,13 @@ header {
 .menu-disciplina{
     width: 20%;
     display: inline-block;
+}
+.botao-disciplina{
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: none;
+    background-color:var(--ciano) ;
+    border: none;
+    padding: 1.05rem 1.5rem;
+    
 }
