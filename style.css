@@ -23,5 +23,8 @@ header {
     background-color:var(--ciano) ;
     border: none;
     padding: 1.05rem 1.5rem;
-    
+    color: var(--branco);
+}
+#menu-toggle{
+    display: none;
 }
