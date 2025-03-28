@@ -12,3 +12,12 @@ header {
     position: relative;
     justify-content: center;
 }
+.botao-disciplina{
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: none;
+    background-color:var(--ciano) ;
+    border: none;
+    padding: 1.05rem 1.5rem;
+    color: var(--branco);
+}
