@@ -38,3 +38,12 @@ header {
     left: 1rem;
     top: 100%;
 }
+.lista-vertical a:hover {
+    background-color: var(--cinza);
+}
+    #meu-toggle:checked ~ .lista-vertical{
+        display: block;
+    }
+    #menu-toggle:checked + .botao-disciplina{
+        background-color: var(--black);
+    }
