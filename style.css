@@ -16,3 +16,13 @@ header {
     width: 20%;
     display: inline-block;
 }
+.lista-vertical a:hover{
+    background-color: var(--ciano);
+}
+#menu-toggle:checked ~ .lista-vertical{
+    display: block;
+}
+#menu-toggle:checked + .botao-disciplinas{
+    background-color: var(--black);
+
+}
