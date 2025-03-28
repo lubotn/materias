@@ -24,14 +24,17 @@ header {
 #menu-toggle{
     display: none;
 }
-.lista-vertical{
-    display: none;
-    position: absolute;
-    background-color: var(--branco);
-    box-shadow: 0 2px 5px var(--black);
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
+.lista-vertical a:hover{
+    background-color: var(--ciano);
 }
+#menu-toggle:checked ~ .lista-vertical{
+    display: block;
+}
+#menu-toggle:checked + .botao-disciplinas{
+    background-color: var(--black);
+
+
+}
+
+
 
