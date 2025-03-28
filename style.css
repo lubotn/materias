@@ -39,7 +39,7 @@ header {
     top: 100%;
 }
 .lista-vertical a:hover {
-    background-color: var(--cinza);
+    background-color: var(--ciano);
 }
     #meu-toggle:checked ~ .lista-vertical{
         display: block;
