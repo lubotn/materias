@@ -28,7 +28,7 @@ header {
 #menu-toggle{
     display: none;
 }
-.lista-vertical{
+.lista-vertical  {
     display: none;
     position: absolute;
     background-color: var(--branco);
@@ -42,6 +42,11 @@ header {
 
 .lista-vertical a:hover{
     background-color: var(--ciano);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
 }
 #menu-toggle:checked ~ .lista-vertical{
     display: block;
