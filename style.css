@@ -16,36 +16,3 @@ header {
     width: 20%;
     display: inline-block;
 }
-.botao-disciplina{
-    cursor: pointer;
-    font-size: 2rem;
-    background-color: none;
-    background-color:var(--branco) ;
-    border: none;
-    padding: 1.05rem 1.5rem;
-    color: var(--branco);
-}
-#menu-toggle{
-    display: none;
-}
-.lista-vertical{
-    display: none;
-    position: absolute;
-    background-color: var(--branco);
-    box-shadow: 0 2px 5px var(--ciano);
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
-}
-.lista-vertical a:hover {
-    background-color: var(--ciano);
-}
-    #meu-toggle:checked ~ .lista-vertical{
-        display: block;
-    }
-    #menu-toggle:checked + .botao-disciplina{
-        background-color: var(--black);
-    }
-    
-
