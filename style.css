@@ -4,13 +4,17 @@
     --ciano:  #00ADB5;
     --branco: #EEEEEE;
 }
-header{
+header {
     display: flex;
     width: 100%;
-    background-color:var(--ciano);
-    padding: 2rem;
+    background-color:var(--cinza);
+    padding: 1rem;
     position: relative;
     justify-content: center;
+}
+.menu-disciplina{
+    width: 20%;
+    display: inline-block;
 }
 .botao-disciplina{
     cursor: pointer;
@@ -24,6 +28,18 @@ header{
 #menu-toggle{
     display: none;
 }
+.lista-vertical{
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    box-shadow: 0 2px 5px var(--ciano);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+
 .lista-vertical a:hover{
     background-color: var(--ciano);
 }
@@ -35,6 +51,3 @@ header{
 
 
 }
-
-
-
