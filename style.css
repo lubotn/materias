@@ -20,7 +20,7 @@ header {
     cursor: pointer;
     font-size: 2rem;
     background-color: none;
-    background-color:var(--ciano) ;
+    background-color:var(--branco) ;
     border: none;
     padding: 1.05rem 1.5rem;
     color: var(--branco);
@@ -47,4 +47,5 @@ header {
     #menu-toggle:checked + .botao-disciplina{
         background-color: var(--black);
     }
+    
 
