@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lubricas</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
-
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="Titulo">
-       
-            
-               <div class="menu-disciplina">
-             <imput type"checkbox" id="menu-toggle">
-             <label for="menu-toggle"class="botao-disciplinas">disciplinas</label>
-             <div class="lista-vertical"> 
-                <a href="#">Matemática</a>
-                <a href="#">Física</a>
-                <a href="#">Quimica</a>
-                <header class=" p-5">
-                    </div>    
-            </div> 
-        
-                    </header>
-                
-               
-                  <header>
-                     <main class="container my-5">
-                
-                        <section id="atividades" class="my-5">
-                            <div class="atividades-fundo d-flex justify-content-between align-items-center">
-                                <div class="esquerda-conteudo">
-                                    
-                                    <nav class="container d-flex justify-content-between align-items-center">
-                                        <ul class="nav mt-5">
-                                            <li class="nav-item"><a class="nav-link" href="#atividades">atividades</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#provas">provas</a></li>
-                                            <li class="nav-item"><a class="nav-link" href="#projetos">projetos</a></li>
-                                        </ul>
-                                       
-                                    </nav>
-                                    
-                                </div>
-                                
-                                    
-                
-                            </div>
-                        </section>
-
-                </header>
-                    
+    <header>
+        <label class="menu-label" onclick="toggleMenu()">Disciplinas</label>
+        <nav class="menu-disciplinas" id="menuDisciplinas">
+            <a onclick="mudarDisciplina('Matemática')">Matemática</a>
+            <a onclick="mudarDisciplina('Física')">Física</a>
+            <a onclick="mudarDisciplina('Química')">Química</a>
+        </nav>
+        <nav class="nav-links">
+            <a onclick="mostrarConteudo('atividades')">Atividades</a>
+            <a onclick="mostrarConteudo('provas')">Provas</a>
+            <a onclick="mostrarConteudo('projetos')">Projetos</a>
+        </nav>
     </header>
+    <div class="content">
+        <h1>Portfólio</h1>
+        <h2 id="disciplina">Matemática</h2>
+        <div id="conteudo">
+            <p>Bem-vindo ao conteúdo de Matemática.</p>
+        </div>
+    </div>
+    <script>
+        function mudarDisciplina(nome) {
+            document.getElementById("disciplina").innerText = nome;
+            document.getElementById("conteudo").innerHTML = `<p>Bem-vindo ao conteúdo de ${nome}.</p>`;
+        }
+
+        function mostrarConteudo(tipo) {
+            let conteudo = document.getElementById("conteudo");
+            if (tipo === "atividades") {
+                conteudo.innerHTML = "<p>Atividades.</p>";
+            } else if (tipo === "provas") {
+                conteudo.innerHTML = "<p>Provas.</p>";
+            } else if (tipo === "projetos") {
+                conteudo.innerHTML = "<p>Projetos.</p>";
+            }
+        }
+
+        function toggleMenu() {
+            let menu = document.getElementById("menuDisciplinas");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+     <footer>
+        <p>Desenvolvedores: Kamila, Lucas Iablonski, Gabriel Lopes, Rafael e Cristopher</p>
+   </footer>
 </body>
+</html>
