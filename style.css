@@ -110,5 +110,5 @@ footer {
 }
 .shadow-box{
     box: shadow 10px -8px; #000000;
-    
+    border-radius: 45%;
 }
