@@ -108,3 +108,7 @@ footer {
     width: 100%;
     text-align: center;
 }
+.shadow-box{
+    box: shadow 8px -10px; #000000;
+    
+}
