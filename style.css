@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #3F7D58;
-    --secondary-color: #EFEFEF;
-    --background-color: #EF9651;
-    --text-color: #EC5228;
-    --accent-color: #1c0a31;
-    --cor-frente: #DDEB9D;
+    --primary-color: #205781;
+    --secondary-color: #4F959D;
+    --background-color: #98D2C0;
+    --text-color: #205781;
+    --accent-color: #F6F8D5;
+    --cor-frente: #ffffff;
     --preto: #000000;
 }
 
@@ -15,7 +15,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #ffffff, #ffffff);
+    background: linear-gradient(180deg, var(--accent-color), var(--background-color));
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -25,6 +25,8 @@ header {
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -35,8 +37,8 @@ header {
     font-size: 18px;
     font-weight: 600;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #ffffff, #ffffff);
-    color: var(--background-color);
+    background: var(--accent-color);
+    color: var(--primary-color);
     border-radius: 8px;
     transition: 0.3s;
     cursor: pointer;
@@ -44,7 +46,8 @@ header {
 }
 
 .menu-label:hover, .nav-links a:hover {
-    background: linear-gradient(45deg, #ffffff, #ac3838);
+    background: var(--background-color);
+    color: var(--secondary-color);
 }
 
 .menu-disciplinas {
@@ -52,7 +55,7 @@ header {
     position: absolute;
     top: 60px;
     left: 10px;
-    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    background: var(--secondary-color);
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -69,24 +72,43 @@ header {
 
 .menu-disciplinas a:hover {
     background: var(--accent-color);
-    color: var(--background-color);
+    color: var(--primary-color);
     border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.search-bar {
+    margin-left: 10px;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .content {
     margin-top: 50px;
-    padding: 20px;
+    padding: 125px;
 }
 
 .content h1 {
     font-size: 42px;
-    color: var(--accent-color);
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
 .content h2 {
     font-size: 32px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 #conteudo {
@@ -95,21 +117,44 @@ header {
     font-weight: 300;
 }
 
-.nav-links {
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--primary-color);
+    color: var(--cor-frente);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#temas {
+    margin-top: 20px;
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tema-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tema-btn:hover {
+    background-color: var(--secondary-color);
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    background-color: var(--preto);
-    color: var(--cor-frente);
+    background-color: var(--primary-color);
+    color: white;
     width: 100%;
-    text-align: center;
-}
-.box-shadow{
-    box: shadow  #ac3838;
-    box-shadow: 8px;
-    border-radius: 50%;
-}
+    padding: 10px;
+  }
